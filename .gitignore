@@ -1,0 +1,52 @@
+# ---- Monorepo ignore for frontend/ + backend/ ----
+
+# Node
+**/node_modules/
+
+# (Keep lockfiles! Intentionally NOT ignored)
+# **/package-lock.json
+
+# Expo / React Native
+**/.expo/
+**/.expo-shared/
+**/dist/
+**/web-build/
+**/expo-env.d.ts
+**/android/
+**/ios/
+**/*.apk
+**/*.aab
+
+# Build / caches
+**/build/
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+
+# Metro
+**/.metro-health-check*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+*.env.*    # e.g. .env.local, .env.development
+
+# Editor
+.vscode/
+
+# Tests/coverage (if you add them)
+coverage/
+
+# Backend-specific
+backend/uploads/**
+!backend/uploads/.gitkeep
